@@ -204,6 +204,8 @@ This will generate out a changeset, about the state of our infrastructure and wh
 
 We can output this changeset ie. "plan" to be passed to an apply, but often you can just ignore outputting.
 
+We found out that the S3 bucket has restrictions that wont allow for Uppercase letters when naming, so we made updates to the main.tf to resolve this issue.
+
 #### Terraform Apply
 
 `terraform apply`
