@@ -96,6 +96,7 @@ func Resource() *schema.Resource {
 		ReadContext: resourceHouseRead,
 		UpdateContext: resourceHouseUpdate,
 		DeleteContext: resourceHouseDelete,
+<<<<<<< HEAD
 		Schema: map[string]*schema.Schema{
 			"name": {
 				Type: schema.TypeString,
@@ -183,7 +184,6 @@ func resourceHouseCreate(ctx context.Context, d *schema.ResourceData, m interfac
 	d.SetId(homeUUID)
 
 	log.Print("resourceHouseCreate:end")
-
 	return diags
 }
 
@@ -233,7 +233,6 @@ func resourceHouseRead(ctx context.Context, d *schema.ResourceData, m interface{
 	}
 
 	log.Print("resourceHouseRead:end")
-
 	return diags
 }
 
